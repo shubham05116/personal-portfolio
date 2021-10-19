@@ -12,14 +12,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: var(--white);
+
 }
 
+#my-portfolio{
+  background: url("../images/bg.jpg" );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .navbar {
-  background: var(--black);
+  /* background: var(--black); */
   height: 50px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
-
+padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +36,7 @@
 .navbar_logo {
   text-decoration: none;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 30px;
   padding-left: 1rem;
   color: var(--white);
 }
@@ -55,74 +62,76 @@
 }
 
 @media screen and (max-width: 768px) {
-    body.active {
-      overflow-y: hidden;
-      overflow-x: hidden;
+    body.active{
+        overflow-x: hidden;
+        overflow-y: hidden;
+
     }
-    .navbar_link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* display: none; */
-    }
-    .navbar_toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background: var(--white);
-      display: block;
-      cursor: pointer;
-    }
-    .navbar_menu {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, 100px);
-      position: absolute;
-      width: 100%;
-      top: -1000px;
-    }
-    
-  
-  .navbar_menu.active {
-      top: 100%;
-      opacity: 1;
-      z-index: 99;
-      height: 100vh;
-      font-size: 1.5rem;
-      background: var(--black);
-    }
-    
-    
-  #mobile-menu {
-      position: absolute;
-      top: 50%;
-      right: 5%;
-      transform: translate(5%, -50%);
-    }
-    /*  for cross mark: */
-  #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    
-    #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    
-    #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    
-   
+  .navbar_link {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    /* display: none; */
   }
+
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.4s ease-in-out;
+    background: var(--white);
+    display: block;
+    cursor: pointer;
+  }
+      
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 100px);
+        position: absolute;
+          width: 100%;
+        top: -1000px;
+    }
+
+  .navbar_menu.active {
+    top: 100%;
+    opacity: 1;
+    z-index: 99;
+    height: 100vh;
+    font-size: 1.5rem;
+    
+    background: var(--black);
   
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(5%, -50%);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+} 
 
 
 /* Hero secction */
 
 .hero{
-    background: var(--black);
+    /* background: var(--black); */
+
     padding: 0.5rem calc((100vw - 1200px) / 2);
     display: flex;
     justify-content: flex-start;
@@ -135,19 +144,29 @@ line-height: 1;
 }
 
 .hero_content h1{
+  word-spacing: 3px;
     margin-top: 30%;
     font-size: clamp(1rem , 8vw , 3rem);
     text-transform: uppercase;
     margin-bottom: .5rem;
+    margin-left: 20px;
+
 }
 
 .hero_content
  p{
     
      font-size: larger;
-     margin: 50px 0  ;
-     word-spacing: 4px;
+     margin: 14px 0 42px 0 ;
+     font-weight:normal;
+     margin-left: 20px;
+
      
+ }
+ .hero_content h3{
+  margin-top: 56px;
+  font-size: 23px;
+  margin-left: 20px;
  }
 
  .button {
@@ -156,14 +175,19 @@ line-height: 1;
     background: var(--red);
     color: white;
     font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
     transition: 0.5s ease;
     border-radius: 10px;
+    margin-left: 20px;
+
   }
   
 .button:hover {
     background: var(--white);
-    color: red;
-    
+    color: var(--red);
+        border: 2px solid red;    
   }
+
+ 
