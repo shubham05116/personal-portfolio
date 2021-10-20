@@ -293,4 +293,86 @@ html {
     font-size: 20px;
     padding-bottom: 10px;
   }
+
 }
+
+
+/* Skills */
+
+.skills {
+  margin: 50px 20px;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+}
+.skills h1 {
+  display: inline-block;
+  text-align: start;
+  padding: 10px 50px;
+
+  margin: 4rem 20px;
+  font-size: var(--font-size-h1);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.skills h1:hover {
+  color: red;
+}
+
+.skills h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5rem;
+  background: crimson;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-list i {
+  padding: 50px;
+  margin-left: 20px;
+ text-align: center;
+
+}
+.skill-list  h3 {
+  font-size: var(--font-size-sm);
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+
+.skill-list h3:hover {
+  color: red;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .skill-list i {
+    padding: 20px;
+    margin-left: 5px;
+ 
+  
+  }
+}
+@media screen and (max-width:530px) {
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+}
+
+
+
