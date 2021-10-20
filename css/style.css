@@ -3,7 +3,16 @@
   --white: white;
   --black: black;
 
+  --border-radius-pic: 35px;
+  --border-radius: 20px;
+  --border: 10px solid transparent;
+  --box-shadow: inset 0px 1px 6px;
+
+  --line-height-p: 2;
+  --line-height-h1: 1.5;
+
   --font-size-h1: clamp(2rem, 2vw, 5rem);
+  --font-size-sm: 20px;
 }
 
 * {
@@ -50,7 +59,7 @@ html {
 .navbar_link {
   text-decoration: none;
   color: var(--white);
-  padding: 20px;
+  padding: 10px 40px;
   font-weight: bolder;
   margin: 0 10px;
 }
@@ -58,12 +67,11 @@ html {
 .navbar_link:hover {
   color: var(--white);
   text-decoration-style: double;
-
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
   color: var(--red);
   transition: all 1s ease;
-  border-radius: 10px;
-  border: 10px solid transparent;
-  box-shadow: inset 0px 1px 6px;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,14 +167,13 @@ html {
   padding-bottom: 20px;
 }
 .hero_content h3 {
-  line-height:1.5;
   margin-top: 56px;
   font-size: 23px;
   /* margin-left: 20px; */
 }
 
 .hero_content p {
-  line-height: 2;
+  line-height: 1.5;
   font-size: larger;
   margin: 14px 0 42px 0;
   font-weight: normal;
@@ -191,7 +198,7 @@ html {
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
   border-radius: 20px;
   /* margin-left: 20px; */
 }
@@ -200,11 +207,10 @@ html {
   background: var(--black);
   color: var(--white);
 
-  border-radius: 20px;
-  border: 10px solid transparent;
-  box-shadow: inset 0px 1px 6px;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
-
 
 /* About Me section: */
 
@@ -214,15 +220,16 @@ html {
 }
 #About-me h1 {
   text-align: start;
-  padding: 20px;
+  padding: 10px 50px;
   margin-left: 20px;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
   font-size: var(--font-size-h1);
   cursor: pointer;
   display: inline-block;
-  border-radius: 20px;
-  border: 10px solid transparent;
-  box-shadow: inset 0px 1px 6px;
+
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
 #About-me h1:hover {
   color: var(--red);
@@ -236,9 +243,9 @@ html {
   background: crimson;
 }
 .my-pic {
-  border-radius: 35px;
-  border: 10px solid transparent;
-  box-shadow: inset 0px 1px 6px;
+  border-radius: var(--border-radius-pic);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
 
 .self-intro {
@@ -254,7 +261,7 @@ html {
 .self_text p {
   padding: 50px 0;
   margin-left: 20px;
-  line-height: 2;
+  line-height: var(--line-height-p);
 }
 
 @media screen and (max-width: 888px) {
@@ -276,7 +283,6 @@ html {
     border: none;
     border-radius: 10px;
     box-shadow: none;
-  
   }
 
   .self_text a {
@@ -288,7 +294,3 @@ html {
     padding-bottom: 10px;
   }
 }
-
-
-
-/* Skills */
