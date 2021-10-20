@@ -2,24 +2,27 @@
   --red: red;
   --white: white;
    --black: black; 
-   /*
-  --font-size-h1: clamp(3rem, 8vw, 7rem);
-  --font-size-p: clamp(1rem, 4vw, 2.5rem); */
+   
+  --font-size-h1: clamp(2rem, 2vw, 5rem);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hk Grotesk", sans-serif;
   color: var(--white);
 
+}
+html{
+  scroll-behavior: smooth;
 }
 
 #my-portfolio{
   background: url("../images/bg.jpg" );
   background-size: cover;
   background-repeat: no-repeat;
+  /* background: var(--red); */
 }
 
 .navbar {
@@ -51,14 +54,18 @@ padding-top: 30px;
   padding:20px;
   font-weight: bolder;
   margin: 0 10px;
+ 
 }
 
 .navbar_link:hover {
   color:var(--white);
   text-decoration-style: double;
-  text-shadow: 5px var(--white);
+
   color: var(--red);
   transition:all 1s ease;
+  border-radius: 10px;
+  border: 10px solid transparent;
+  box-shadow: inset 0px 1px 6px; 
 }
 
 @media screen and (max-width: 768px) {
@@ -108,7 +115,7 @@ padding-top: 30px;
     position: absolute;
     top: 50%;
     right: 5%;
-    transform: translate(5%, -50%);
+    transform: translate(4%, -50%);
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
@@ -135,7 +142,8 @@ padding-top: 30px;
     padding: 0.5rem calc((100vw - 1200px) / 2);
     display: flex;
     justify-content: flex-start;
-    align-items: center;margin-bottom: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 .hero_content {
     color: var(--white);
@@ -157,7 +165,7 @@ margin-left: 20px;
 
 .hero_content
  p{
-    
+    line-height: 1.5;
      font-size: larger;
      margin: 14px 0 42px 0 ;
      font-weight:normal;
@@ -183,7 +191,7 @@ margin-left: 20px;
     text-decoration: none;
     cursor: pointer;
     transition: 0.5s ease;
-    border-radius: 10px;
+    border-radius: 20px;
     /* margin-left: 20px; */
 
 
@@ -192,22 +200,32 @@ margin-left: 20px;
 .button:hover {
     background: var(--black);
     color: var(--white);
-        border: 2px solid red;    
+    
+        border-radius: 20px;
+        border: 10px solid transparent;
+        box-shadow: inset 0px 1px 6px;   
   }
 
   #About-me{
     margin-left: 10px;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+
   }
 #About-me h1{
   text-align:start;
   padding: 20px;
   margin-left: 20px;
-    font-size: 50px;
+    font-size: var(--font-size-h1);
     cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+border: 10px solid transparent;
+box-shadow: inset 0px 1px 6px;  
 }
 #About-me h1:hover{
 color: var(--red);
-transition: all 1s ease;
+display:inline-block;
+
 
 
 }
@@ -217,54 +235,59 @@ transition: all 1s ease;
   height: 2px;
   width: 5rem;
   background:crimson;
-  margin: 15px;
   
   
 }
 .my-pic{
-  border-radius: 50%;
-margin-right: 100px;
-
+  border-radius: 35px;
+  border: 10px solid transparent;
+  box-shadow: inset 0px 1px 6px;
 
 }
 
 .self-intro{
  display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
 align-items: center;
 
 }
 
 .self_text{
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 .self_text p{
   padding: 50px 0;
   margin-left: 20px;
+  line-height: 1.5;
+  
 }
 
 
 
-@media screen and (max-width: 768px) {
-  #About-me h1{
-    font-size: 3rem;
-  }
+@media screen and (max-width: 888px) {
+ 
   .self-intro{
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 30px;
+  align-items: initial;
+  flex-wrap: wrap;
 
   }
   .self_text{
     
-  padding: 0 50px 20px 0;
+  padding: 0 0 20px 0;
   margin: 20px auto;
+  line-height: 1;
   }
   .my-pic{
-    width: 200px ;
-    height: 200px;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    box-shadow: inset 0px 1px 6px;
+  
   }
 
   .self_text a{
