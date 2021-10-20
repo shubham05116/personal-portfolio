@@ -159,13 +159,14 @@ html {
   padding-bottom: 20px;
 }
 .hero_content h3 {
+  line-height:1.5;
   margin-top: 56px;
   font-size: 23px;
   /* margin-left: 20px; */
 }
 
 .hero_content p {
-  line-height: 1.5;
+  line-height: 2;
   font-size: larger;
   margin: 14px 0 42px 0;
   font-weight: normal;
@@ -253,7 +254,7 @@ html {
 .self_text p {
   padding: 50px 0;
   margin-left: 20px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 @media screen and (max-width: 888px) {
