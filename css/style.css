@@ -280,16 +280,20 @@ align-items: center;
   line-height: 1;
   }
   .my-pic{
-    display: block;
+   display: block;
     width: 200px;
     height: auto;
     margin: auto;
-    border-radius: 50%;
-    border: 10px solid transparent;
-    box-shadow: inset 0px 1px 6px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  
   
   }
-
+#About-me h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
   .self_text a{
   margin-left: 20px;
   }
