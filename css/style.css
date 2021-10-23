@@ -493,7 +493,8 @@ padding: 3px 40px;
 }
 
 .contact__info {
-  width:100%;
+  width:auto;
+text-align: center;
   margin-bottom: 30px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
 
