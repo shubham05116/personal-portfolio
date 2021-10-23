@@ -493,7 +493,7 @@ padding: 3px 40px;
 }
 
 .contact__info {
-  max-width:50%;
+  max-width:100%;
   margin-bottom: 30px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
 
