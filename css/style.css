@@ -493,7 +493,7 @@ padding: 3px 40px;
 }
 
 .contact__info {
-  max-width:100%;
+  width:100%;
   margin-bottom: 30px;
   padding: 0.5rem calc((100vw - 1200px) / 2);
 
@@ -532,12 +532,7 @@ display: inline-block;
   }
   .contact{
     margin-left:5px;
-  }
-  .contact__info {
-    display: flex;
-align-items: initial;
-    flex-wrap: wrap;
-  }
+}
   
 }
 /* ----- Footer ----- */
