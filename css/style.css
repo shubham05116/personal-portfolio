@@ -22,9 +22,7 @@
   font-family: "Hk Grotesk", sans-serif;
   color: var(--white);
 }
-html {
-  scroll-behavior: smooth;
-}
+
 
 #my-portfolio {
   /* background: url("../images/bg.jpg");
